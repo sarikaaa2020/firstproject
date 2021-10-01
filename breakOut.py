@@ -30,7 +30,26 @@ text_col = (255, 255, 255)
 columns = 6
 rows = 6
 clock = pygame.time.Clock()
-fps = 1000
+
+
+#---------------------------------------------------------------------------------------------------
+# setting the fps to 100 which is normal speed....
+fps = 100
+
+# creating the printFun()
+def printFun():
+    print("_________________________________________________________________")
+    print("_________________________________________________________________")
+    print("_________________________________________________________________")
+    print("HELLO WORLD !!!")
+    print("THIS IS THE BREAK OUT GAME CREATED IN PYTHON USING PYGAME MODULE")
+    print("_________________________________________________________________")
+    print("_________________________________________________________________")
+    print("_________________________________________________________________")
+
+#---------------------------------------------------------------------------------------------------
+
+
 live_ball = False
 game_over = 0
 
@@ -318,6 +337,12 @@ ball = game_ball(player_paddle.x + (player_paddle.width//2), player_paddle.y - p
 run = True 
 
 while run:
+
+    
+    # calling the print function........
+    printFun()
+
+
     clock.tick(fps)
     screen.fill(bg)
 
